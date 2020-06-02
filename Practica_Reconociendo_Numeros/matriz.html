@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html leng="en">
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/synaptic/1.1.4/synaptic.js"></script>
+    </head>
+<body>
+    <center>
+        <p>ESCRIBE UN NUMERO  </p>
+ <div class="contenido">  
+  <div class="tabla">
+     <div class="row">
+         <div id="c00" onclick="Checkcell(0,0)" class="cell "></div>
+         <div id="c01" onclick="Checkcell(0,1)" class="cell "></div>
+         <div id="c02" onclick="Checkcell(0,2)" class="cell "></div>
+         <div id="c03" onclick="Checkcell(0,3)" class="cell "></div>
+         <div id="c04" onclick="Checkcell(0,4)" class="cell "></div>
+         <div id="c05" onclick="Checkcell(0,5)" class="cell "></div>
+     </div>
+     <div class="row">
+        <div id="c10" onclick="Checkcell(1,0)" class="cell "></div>
+        <div id="c11" onclick="Checkcell(1,1)" class="cell "></div>
+        <div id="c12" onclick="Checkcell(1,2)" class="cell "></div>
+        <div id="c13" onclick="Checkcell(1,3)" class="cell "></div>
+        <div id="c14" onclick="Checkcell(1,4)" class="cell "></div>
+        <div id="c15" onclick="Checkcell(1,5)" class="cell "></div>
+    </div>
+    <div class="row">
+        <div id="c20" onclick="Checkcell(2,0)" class="cell "></div>
+        <div id="c21" onclick="Checkcell(2,1)" class="cell "></div>
+        <div id="c22" onclick="Checkcell(2,2)" class="cell "></div>
+        <div id="c23" onclick="Checkcell(2,3)" class="cell "></div>
+        <div id="c24" onclick="Checkcell(2,4)" class="cell "></div>
+        <div id="c25" onclick="Checkcell(2,5)" class="cell "></div>
+    </div>
+    <div class="row">
+        <div id="c30" onclick="Checkcell(3,0)" class="cell "></div>
+        <div id="c31" onclick="Checkcell(3,1)" class="cell "></div>
+        <div id="c32" onclick="Checkcell(3,2)" class="cell "></div>
+        <div id="c33" onclick="Checkcell(3,3)" class="cell "></div>
+        <div id="c34" onclick="Checkcell(3,4)" class="cell "></div>
+        <div id="c35" onclick="Checkcell(3,5)" class="cell "></div>
+    </div>
+    <div class="row">
+        <div id="c40" onclick="Checkcell(4,0)" class="cell "></div>
+        <div id="c41" onclick="Checkcell(4,1)" class="cell "></div>
+        <div id="c42" onclick="Checkcell(4,2)" class="cell "></div>
+        <div id="c43" onclick="Checkcell(4,3)" class="cell "></div>
+        <div id="c44" onclick="Checkcell(4,4)" class="cell "></div>
+        <div id="c45" onclick="Checkcell(4,5)" class="cell "></div>
+    </div>
+    <div class="row">
+        <div id="c50" onclick="Checkcell(5,0)" class="cell "></div>
+        <div id="c51" onclick="Checkcell(5,1)" class="cell "></div>
+        <div id="c52" onclick="Checkcell(5,2)" class="cell "></div>
+        <div id="c53" onclick="Checkcell(5,3)" class="cell "></div>
+        <div id="c54" onclick="Checkcell(5,4)" class="cell "></div>
+        <div id="c55" onclick="Checkcell(5,5)" class="cell "></div>
+    </div>
+    <div class="row">
+        <div id="c60" onclick="Checkcell(6,0)" class="cell "></div>
+        <div id="c61" onclick="Checkcell(6,1)" class="cell "></div>
+        <div id="c62" onclick="Checkcell(6,2)" class="cell "></div>
+        <div id="c63" onclick="Checkcell(6,3)" class="cell "></div>
+        <div id="c64" onclick="Checkcell(6,4)" class="cell "></div>
+        <div id="c65" onclick="Checkcell(6,5)" class="cell "></div>
+    </div>
+    <div class="row">
+        <div id="c70" onclick="Checkcell(7,0)" class="cell "></div>
+        <div id="c71" onclick="Checkcell(7,1)" class="cell "></div>
+        <div id="c72" onclick="Checkcell(7,2)" class="cell "></div>
+        <div id="c73" onclick="Checkcell(7,3)" class="cell "></div>
+        <div id="c74" onclick="Checkcell(7,4)" class="cell "></div>
+        <div id="c75" onclick="Checkcell(7,5)" class="cell "></div>
+    </div>
+    <div class="row">
+        <div id="c80" onclick="Checkcell(8,0)" class="cell "></div>
+        <div id="c81" onclick="Checkcell(8,1)" class="cell "></div>
+        <div id="c82" onclick="Checkcell(8,2)" class="cell "></div>
+        <div id="c83" onclick="Checkcell(8,3)" class="cell "></div>
+        <div id="c84" onclick="Checkcell(8,4)" class="cell "></div>
+        <div id="c85" onclick="Checkcell(8,5)" class="cell "></div>
+    </div>
+    <div class="row">
+        <div id="c90" onclick="Checkcell(9,0)" class="cell "></div>
+        <div id="c91" onclick="Checkcell(9,1)" class="cell "></div>
+        <div id="c92" onclick="Checkcell(9,2)" class="cell "></div>
+        <div id="c93" onclick="Checkcell(9,3)" class="cell "></div>
+        <div id="c94" onclick="Checkcell(9,4)" class="cell "></div>
+        <div id="c95" onclick="Checkcell(9,5)" class="cell "></div>
+        
+    </div>
+    
+  <div>
+    <input id="enviar" type="button" value="Enviar" onclick="salida()">
+  </n><input id="limpiar" type="button" value="limpiar" onclick="limpiar()" ></div>
+   </div>
+
+</div> 
+</center>
+<script src="numero.js"></script>
+<script src="tablero.js"></script>
+<script src="prueba.js"></script>
+</body>
+
+</html>
